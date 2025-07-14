@@ -1,0 +1,236 @@
+/*
+.zain-extralight {
+  font-family: "Zain", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.zain-light {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zain-regular {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zain-bold {
+  font-family: "Zain", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zain-extrabold {
+  font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.zain-black {
+  font-family: "Zain", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.zain-light-italic {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.zain-regular-italic {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+*/
+
+body {
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #000000; /* White background */
+    color: #ffffff; /* Dark grey text */
+    text-align: center;
+    max-height: 75px; /* Set a minimum height for compactness */
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;      /* Vertically center logo and nav */
+    justify-content: flex-start; /* Or use space-between for more separation */
+    gap: 32px;                /* Space between logo and nav */
+    padding: 0 32px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 20px;
+    height: 100px; /* Smaller logo for better alignment */
+    width: auto;
+}
+
+.banner {
+    background: url('/Pictures/home_banner.jpg') center left/cover, #233239;
+    background-size: cover;      /* Scales image to cover the container */
+    background-position: center; /* Vertically and horizontally centers the image */
+    background-repeat: no-repeat;
+    height: 600px;               /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Increase vertical gap between children */
+    align-items: left;
+}
+
+.banner-content {
+    margin-left: 40px;
+    color: #fff;
+    max-width: 500px;
+    height: 300px;;
+    background: rgba(55,73,111, 0.2); /* Optional: semi-transparent overlay for readability */
+    padding: 24px 32px;
+    border-radius: 8px;
+}
+
+.banner-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.banner nav {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
+    padding: 16px 32px 0 0;
+}
+
+.banner nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.banner nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: #ebf1f3;
+    padding: 20px;
+    font-size: large;
+    text-align: center;
+}
+
+.highlights {
+    background-color: rgb(55,73,111, 0.5);
+    padding: 20px;
+}
+
+.highlights h2 {
+    text-align: center;
+}
+
+.highlights ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.highlights li {
+    background: #f0f0f0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto; /* Two columns */
+    gap: 16px; /* 16px gap between both rows and columns */
+    justify-items: center;
+    max-width: fit-content;
+    margin: 32px auto;
+}
+
+.service-card {
+    background: #2f4463;
+    color: #fff;
+    border-radius: 12px;
+    padding: 24px 15px;
+    width: 200px;   /* Wider rectangle */
+    height: 120px;  /* Less height */
+    display: flex;
+    flex-direction: column; /* Icon and text side by side */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    background: #5a80b8;
+    -webkit-transform: translateY(-8px) scale(1.03);
+    -moz-transform: translateY(-8px) scale(1.03);
+    -ms-transform: translateY(-8px) scale(1.03);
+    -o-transform: translateY(-8px) scale(1.03);
+}
+
+.service-card img {
+    font-size: 2rem;
+    margin-top: 0%;
+    margin-right: 0;         /* Remove horizontal margin */
+    margin-bottom: 8px;      /* Add space below icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card h4 {
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.cta {
+    display: inline-block;
+    background: #6d528f;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background: rgb(109,82,143, 0.7);
+}
+
+footer {
+    background: rgba(12,29,73,255);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
